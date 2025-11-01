@@ -346,7 +346,7 @@
   margin: 0 auto;
 }
 .section-desc--spaced {
-  margin-bottom: 2.8rem; /* 여기! 카드랑 간격 벌린 부분 */
+  margin-bottom: 2.8rem;
 }
 
 /* ===== grids ===== */
@@ -479,7 +479,7 @@
 @media (max-width: 640px) {
   .story-grid,
   .card-grid {
-    grid-template-columns: 1fr; /* ✅ 여기서 전부 한 줄씩 */
+    grid-template-columns: 1fr;
   }
   .hero-actions {
     flex-direction: column;
@@ -489,24 +489,25 @@
     font-size: 2.35rem;
   }
 }
-/* 기존 .page 그대로 두되, 모바일일 때만 확장 */
+
+/* ===== 모바일 확장 (overflow fix 포함) ===== */
 @media (max-width: 640px) {
   .page {
     background: radial-gradient(circle at 20% 10%, #182235 0%, #0f172a 40%, #020617 85%);
-    /* 배경이 전체로 확장 */
     overflow-x: hidden;
   }
 
   .section {
     width: 100%;
-    max-width: none; /* ✅ max-width 제한 해제 */
-    padding: 0 1rem; /* 여백만 적당히 유지 */
+    max-width: none;
+    padding: 0 1rem;
   }
 
   .food-card,
   .play-card {
-    border-radius: 0; /* ✅ 카드가 배경과 자연스럽게 이어지게 */
-    margin: 0 -1rem; /* 양옆으로 꽉 채우기 */
+    border-radius: 0;
+    margin: 0 -1rem;
+    width: calc(100% + 2rem); /* ✅ 오른쪽으로 벗어나지 않게 보정 */
   }
 }
 
