@@ -189,6 +189,7 @@
 
 <style scoped>
 /* ===== base ===== */
+/* ===== base ===== */
 .page {
   min-height: 100vh;
   background: radial-gradient(circle at 15% 5%, #152032 0%, #0f172a 40%, #020617 85%);
@@ -321,7 +322,7 @@
 .section {
   width: min(1100px, 100%);
   margin: 5.7rem auto 0;
-  padding: 0 1.5rem;
+  padding: 0; /* ✅ 화면 패딩 제거 (기존 0 1.5rem → 0) */
 }
 .section-head {
   margin-bottom: 2.4rem;
@@ -489,26 +490,4 @@
     font-size: 2.35rem;
   }
 }
-
-/* ===== 모바일 확장 (overflow fix 포함) ===== */
-@media (max-width: 640px) {
-  .page {
-    background: radial-gradient(circle at 20% 10%, #182235 0%, #0f172a 40%, #020617 85%);
-    overflow-x: hidden;
-  }
-
-  .section {
-    width: 100%;
-    max-width: none;
-    padding: 0 1rem;
-  }
-
-  .food-card,
-  .play-card {
-    border-radius: 0;
-    margin: 0 -1rem;
-    width: calc(100% + 2rem); /* ✅ 오른쪽으로 벗어나지 않게 보정 */
-  }
-}
-
 </style>
