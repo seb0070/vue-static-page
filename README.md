@@ -1,5 +1,96 @@
-# Vue 3 + TypeScript + Vite
+# 🌕 Chuseok Story Landing Page
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+> Vue + TypeScript + Vite 기반으로 제작된 한가위(추석) 테마 랜딩 페이지  
+> 감성적인 가을 색감, 보름달의 따뜻한 빛, 전통의 정서를 담았습니다.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+---
+
+## 🔗 배포 링크
+
+👉 **[https://seb0070.github.io/vue-static-page/](https://seb0070.github.io/vue-static-page/)**  
+
+
+---
+
+## 🟩 프로젝트 소개
+
+이 프로젝트는 추석 보름달이 밝게 떠오른 밤하늘에서 영감을 받아 제작한 반응형 웹페이지입니다.  
+Vue 3 + TypeScript + Vite 조합으로 구현되었으며,  
+따뜻한 달빛의 색감과 한가위의 전통 놀이·음식 이야기를 현대적인 감성으로 담았습니다.
+
+---
+
+## 🟩 기술 스택
+
+| 분류 | 기술 |
+|------|------|
+| Framework | Vue 3 + Vite |
+| Language | TypeScript |
+| Style | Scoped CSS |
+| Font | Pretendard / Noto Sans KR |
+| Hosting | Vercel / Netlify |
+| Image | ChatGPT Image Gen (OpenAI) |
+
+---
+
+## 🟩 주요 구성
+
+| 섹션 | 내용 |
+|------|------|
+| **Hero** | 보름달과 메인 카피, 가을 밤의 따뜻한 분위기 표현 |
+| **Story** | 한가위의 의미와 정서적 메시지 |
+| **Foods** | 송편, 전, 한과 — 전통 음식 소개 |
+| **Play** | 강강술래, 윷놀이, 씨름 — 추석의 놀이 문화 |
+| **Footer** | “올가을에도 이렇게 따뜻하게” 마무리 메시지 |
+
+---
+
+## 🟩 사용한 프롬프트
+
+> 본 프로젝트는 ChatGPT (GPT-5)의 협업을 통해 제작되었습니다.  
+> 아래는 실제로 사용된 주요 프롬프트 중 일부입니다.
+
+### 🖼️ 이미지 생성 관련
+```
+추석에 먹는 여러 종류의 전을 나무 쟁반에 올린 그림을 그려줘.
+```
+```
+한과도 생성해줘.
+전과 이미지가 너무 비슷하니 다르게 그려줘
+```
+```
+찜기에 올라간 모습으로 송편 이미지 만들어줘.
+```
+```  
+1. 윷놀이 하는 이미지 만들어줘.
+2. 네모 판에 말이 올려져 있는 모습으로 그려줘.
+3. (윷놀이판 이미지 첨부) 사진 참고해서 그려줘.
+```
+```
+달빛 아래에서 강강술래 하는 모습 그려줘.
+```
+```
+씨름 하는 모습 그려줘.
+```
+### 💻 코드 작성 및 페이지 구성
+
+```
+vue+ts+vite로 한가위에 잘 어울리는 웹페이지를 하나 만들고 싶은데,  
+app.vue 파일 하나 멋있게 만들어줄래.  
+페이지의 메인 카피, 섹션 제목, 전통 음식/놀이 소개, 간단한 설명/스토리를 담은 페이지였으면 좋겠어.
+```
+```
+보름달은 사진 말고 너가 도형으로 만들어주라.  
+그리고 가을 느낌이 나는 페이지였으면 좋겠어.
+```
+```
+모바일에서 화면이 꽉 차게 보이도록 section과 grid의 스타일을 수정해줘.  
+PC는 그대로 두고, 모바일일 때만 padding을 조정해서  
+배경 밖으로 카드가 튀어나오지 않게 만들어줘.
+```
+
+📜 라이선스
+MIT License © 2025 [Your Name]
+
+본 프로젝트는 OpenAI GPT-5의 협업으로 제작되었습니다.
+코드, 텍스트, 이미지 일부는 AI의 도움을 받아 생성 및 보정되었습니다.
